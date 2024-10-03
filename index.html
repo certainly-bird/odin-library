@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odin Library</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <dialog>
+        <form id="form">
+            <h2>New Book</h2>
+            <button type="button" id="closeDialogBtn">X</button>
+            <div class="form-content">
+                <label for="title">Title:</label>
+                <input type="text" name="Title" id="title" placeholder="Ex: Rouge Heroes" maxlength="50" required>
+                <label for="author">Author:</label>
+                <input type="text" name="Author" id="author" placeholder="Ex: Ben Macintyre" maxlength="50">
+                <label for="pages">Pages:</label>
+                <input type="number" name="Pages" id="pages" placeholder="500" min="1" max="9999">
+                <label for="status">Status:</label>
+                <select name="Read" id="status">
+                    <option value="1">Read</option>
+                    <option value="0" selected>Unread</option>
+                </select>
+            </div>
+            <input type="submit" id="submit" value="Add" />
+        </form>
+    </dialog>
+    <div class="container">
+        <div class="header">
+            <h1>library</h1>
+            <div class="button" id="addBook">add book</div>
+        </div>
+        <div class="shelf"></div>
+    </div>
+</body>
+</html>
